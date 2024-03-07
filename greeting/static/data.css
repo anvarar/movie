@@ -1,0 +1,225 @@
+p 
+{
+    color: red;
+}
+* 
+{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+	font-family: "poppins",sans-serif;
+}
+html 
+{
+	scroll-behavior: smooth;
+}
+.navbar-nav 
+    {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 30px;
+      margin-left: auto;
+
+    }
+    .demo
+    {
+     background-color: #0d0f1b;
+     color: #fff;
+    }  
+.demo button 
+{
+	
+	background-color: white;
+}
+.slide a 
+{
+	
+	font-size: 16pt;
+	margin:0px 20px;
+	color:#fff;
+}
+.demo1 a 
+{
+	color: #fff;
+	font-size: 18pt;
+	font-weight: 700;
+}
+.demo1 span   
+{
+		color: #faca22;
+}
+
+
+.slide-bar ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #faca22;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;		
+}
+#section1
+{   
+	
+	height: 100vh;
+    background-color: #c8d4e0;
+    padding: 8% 6%;
+	color:#fff;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#section1 .left h1 
+{
+	font-size: 46px;
+}
+#section1 .left h1 span 
+{
+	color: #faca22;
+}
+#section1 .left h3
+{
+	font-size: 22px;
+	font-weight: 500;
+}	
+#section1 .left p 
+{
+	font-size: 18px;
+	padding: 20px 35% 20px 0px;
+}
+#section1 .left a 
+{
+	text-decoration: none;
+	color:#000;
+	background-color: #faca22;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	display: inline-block;
+	border:none;
+	cursor: pointer;
+  transition: all 0.5s;
+}
+#section1 .left a:hover 
+{
+	
+	transform:scale(1.1);
+}
+#section1 .right a
+{
+	display: block;
+	padding: 6px 10px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	transition: all 0.5s;
+	color: #fff;
+}
+#section1 .right a:hover 
+{
+	color: #faca22;
+	border: 1px solid #faca22;
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+#section3
+{
+	padding: 60px 6% 80px;
+	background-color:  #f7f7f7;
+	text-align: center;
+}
+.services div
+{
+	padding: 40px 30px;
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 10px;
+	transition: all 0.6s;
+
+} 
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 60px;
+  text-align: left;
+}
+.services a 
+{
+	color: white;
+	font-weight: bold;
+}
+.services a:link
+{
+	text-decoration: none;
+}
+.services a:hover
+{
+	color: black;
+}
+.services div:hover 
+{
+	background-color: #faca22;
+	transform: translateY(-10px);
+}
+.services img 
+{
+	border-radius: 5px;
+}
+.sub-title 
+{
+	background-color: #faca22;
+	margin-top: 50px;
+}
+#section2
+{   
+	
+	height: 30vh;
+    background-color:white;
+    padding: 0% 6%;
+	text-align: center;
+	margin-top: 15px;
+	
+	
+	
+	
+}
+.item 
+{
+	margin-top: 15px;
+	
+}
+.item button 
+{
+	margin: 17px;
+	
+}
+
+.item a:link
+{
+	text-decoration: none;
+	color:#e01717;
+	background-color: #faca22;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	display: inline-block;
+	border:none;
+	cursor: pointer;
+    transition: all 0.5s;
+	font-weight: bold;
+}
+.item a:hover 
+{
+	
+	transform:scale(1.1);
+}

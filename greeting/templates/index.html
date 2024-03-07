@@ -1,0 +1,135 @@
+{%extends 'base.html'%}
+{%block content%}
+      <!--section1-->
+      <div id="section1">
+        <div class="left">
+          <h1>welcome to <span>ShowMovie</span></h1>
+          <h3></h3>
+          <P>Lights, camera, action! Welcome to MovieTicket, your premier destination for hassle-free movie ticket booking. Say goodbye to long queues and sold-out shows – with MovieTicket, securing your seat at the hottest screenings is just a tap away.</P>
+          <a href="{%url 'addshow1'%}" >Add Show</a>
+        </div>
+        <div class="right">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+      </div>
+      <!--end of section1-->
+      
+      <!--end of about section-->
+      <div id="section2">
+        <div>
+          <h2 class="sub-title">shows time</h2>
+          <h3 class="title"></h3>
+        </div>
+      <div class="item">
+        {%for products in list2%}
+        <button ><a href="{% url 'ten' start_time=products.start_time %}">{{ products.start_time }}-{{ products.end_time }}</a></button>
+
+        {%endfor%}
+      </div>
+    </div>
+       
+      </div>
+      <!--Service section-->
+      <div id="section3">
+        <div>
+          <h2 class="sub-title">our shows</h2>
+          <h3 class="title"></h3>
+        </div>
+      <div class="services"> 
+        {%for products in list%}
+        <div>
+          <img src="#">
+          <h2>Movie Name:{{products.title}}</h2>
+          <h3>Director:{{products.director}}</h3>
+          <h4>Release Date:{{products.release_date}}</h4>
+          <h5>Show Screen:{{products.screen}}</h5>
+          <h6>show time:{{products.start_time}}-{{products.end_time}}</h6>
+          <button class="btn btn-success"><a href="{% url 'updateproduct' products.id %}">Edit</a></button>
+          <button class="btn btn-danger"><a href="{% url 'deleteproduct' products.id %}">Delete</a></button>     
+        </div>
+        {%endfor%}
+      </div>
+      <div id="section4">
+        <div>
+          
+          <h2 class="sub-title">Screen 1</h2>
+          <h3 class="title"></h3>
+        </div>
+      
+      
+      <div class="services"> 
+        {%for products in screen1%}
+        <div>
+          <img src="#">
+          <h2>Movie Name:{{products.title}}</h2>
+          <h3>Director:{{products.director}}</h3>
+          <h4>Release Date:{{products.release_date}}</h4>
+          <h5>Show Screen:{{products.screen}}</h5>
+          <h6>show time:{{products.start_time}}-{{products.end_time}}</h6>
+          <button class="btn btn-success"><a href="{% url 'updateproduct' products.id %}">Edit</a></button>
+          <button class="btn btn-danger"><a href="{% url 'deleteproduct' products.id %}">Delete</a></button>     
+        </div>
+        {%endfor%}
+      </div>
+      </div>
+
+      <div id="section5">
+        <div>
+          
+          <h2 class="sub-title">Screen 2</h2>
+          <h3 class="title"></h3>
+        </div>
+      
+      
+      <div class="services"> 
+        {%for products in screen2%}
+        <div>
+          <img src="#">
+          <h2>Movie Name:{{products.title}}</h2>
+          <h3>Director:{{products.director}}</h3>
+          <h4>Release Date:{{products.release_date}}</h4>
+          <h5>Show Screen:{{products.screen}}</h5>
+          <h6>show time:{{products.start_time}}-{{products.end_time}}</h6>
+          <button class="btn btn-success"><a href="{% url 'updateproduct' products.id %}">Edit</a></button>
+          <button class="btn btn-danger"><a href="{% url 'deleteproduct' products.id %}">Delete</a></button>     
+        </div>
+        {%endfor%}
+      </div>
+      </div>
+
+      <div id="section6">
+        <div>
+          
+          <h2 class="sub-title">Screen 3</h2>
+          <h3 class="title"></h3>
+        </div>
+      
+      
+      <div class="services"> 
+        {%for products in screen3%}
+        <div>
+          <img src="#">
+          <h2>Movie Name:{{products.title}}</h2>
+          <h3>Director:{{products.director}}</h3>
+          <h4>Release Date:{{products.release_date}}</h4>
+          <h5>Show Screen:{{products.screen}}</h5>
+          <h6>show time:{{products.start_time}}-{{products.end_time}}</h6>
+          <button class="btn btn-success"><a href="{% url 'updateproduct' products.id %}">Edit</a></button>
+          <button class="btn btn-danger"><a href="{% url 'deleteproduct' products.id %}">Delete</a></button>     
+        </div>
+        {%endfor%}
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+{%endblock%}
+
+</body>
+</html>

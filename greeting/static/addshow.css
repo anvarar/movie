@@ -1,0 +1,51 @@
+.addshows .container {
+                        max-width: 600px;
+                        margin: 60px;
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .addshows .form-title {
+                        text-align: center;
+                        color: #333;
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+
+                    .addshows    form {
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .addshows    label {
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                        color: #555;
+                    }
+
+                    .addshows input, textarea {
+                        padding: 12px;
+                        margin-bottom: 16px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                    }
+
+                    .addshows button {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 15px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    .addshows    button:hover {
+                        background-color: #45a049;
+                    }
+                
